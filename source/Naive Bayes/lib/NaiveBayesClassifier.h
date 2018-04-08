@@ -9,18 +9,11 @@
 namespace NguyenQuocHuy {
     class NaiveBayesClassifier {
     private:
-        void 
-        tinhTruocMotSoThu();
-
         void
         sapXepTheoLop();
 
-        void 
-        tinhXacSuatLop();
-
         CSDL* csdl;
         int* viTriTheoLop;
-        std::map<char, double> xacSuatLop;   // xacSuatLop(c): xac suat xuat hien lop c
     public:
         NaiveBayesClassifier(CSDL* _csdl);
         char phanLop(std::string thuocTinh);

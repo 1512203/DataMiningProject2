@@ -12,28 +12,13 @@ namespace NguyenQuocHuy {
         sapXepTheoKhoa(this->csdl->soDong, this->viTriTheoLop, this->csdl->lop);
     }
 
-    void 
-    NaiveBayesClassifier::tinhXacSuatLop() {
-        this->sapXepTheoLop();
-        for (int l = 0, r = 1; l < this->csdl->soDong; l = r) {
-            char c = this->csdl->lop[this->viTriTheoLop[l]];
-            for (r = l+1; 
-                    r < this->csdl->soDong && this->csdl->lop[this->viTriTheoLop[r]] == c; 
-                    ++r); 
-            this->xacSuatLop[c] = double(r-l) / this->csdl->soDong;
-        }
-    }
-
-    void
-    NaiveBayesClassifier::tinhTruocMotSoThu() {
-        this->tinhXacSuatLop();
-    }
 
     NaiveBayesClassifier::NaiveBayesClassifier(CSDL* _csdl) {
         this->csdl = _csdl;
         this->viTriTheoLop = new int[this->csdl->soDong];
-        this->tinhTruocMotSoThu();
+        this->sapXepTheoLop();
     }
+
 
     char 
     NaiveBayesClassifier::phanLop(std::string thuocTinh) {
@@ -45,7 +30,7 @@ namespace NguyenQuocHuy {
                     r < this->csdl->soDong && this->csdl->lop[this->viTriTheoLop[r]] == c; 
                     ++r); 
 
-            double xacSuatChonLop = 1.0;
+            double xacSuatChonLop = double(r-l)/this->csdl->soDong;
             for (int j = 0; j < this->csdl->soThuocTinh; ++j) {
                 int soDongCoThuocTinhGiongDuLieu = 0;
                 for (int i = l; i < r; ++i) 
