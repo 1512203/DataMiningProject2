@@ -14,7 +14,25 @@
 ```
 ./
 |-- README.md
-
+|-- data/
+|-- source/
+|---|-- kNN/
+|---|-- Naive Bayes/
+|---|---|-- lib/
+|---|---|---|-- CSDL.cpp
+|---|---|---|-- CSDL.h
+|---|---|---|-- NaiveBayesClassifier.cpp
+|---|---|---|-- NaiveBayesClassifier.h
+|---|---|---|-- NaiveBayesClassifier.h
+|---|---|---|-- SortingSupport.cpp
+|---|---|---|-- SortingSupport.h
+|---|---|---|-- Makefile
+|---|---|-- src/
+|---|---|---|-- main.cpp
+|---|---|---|-- Makefile 
+|---|---|-- BuildAndRun.sh
+|---|---|-- Clean.sh
+|---|---|-- Makefile
 ```
 
 ## Huớng dẫn cách chạy:

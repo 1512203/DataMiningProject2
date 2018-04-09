@@ -1,1 +1,3 @@
 data/*
+source/Naive Bayes/src/testDocCSDL.cpp
+source/Naive Bayes/src/testNaiveBayes.cpp
