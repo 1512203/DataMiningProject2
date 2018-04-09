@@ -5,3 +5,4 @@ all:
 clean:
 	cd lib; make clean
 	cd src; make clean
+	rm -f result.txt
