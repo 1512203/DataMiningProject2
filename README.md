@@ -1,6 +1,6 @@
 # Bài tập Lab #1 - Môn Data Mining
 
-## Author
+## Nguời cài đặt
 * Họ và tên: Nguyễn Quốc Huy
 * Truờng Đại học Khoa học tự nhiên TP. Hồ Chí Minh
 * Lớp 15CNTN
