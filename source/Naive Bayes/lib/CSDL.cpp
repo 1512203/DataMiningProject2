@@ -6,8 +6,7 @@
 
 namespace NguyenQuocHuy {
 
-    std::string 
-    CSDL::tachChuoi(const std::string &dong) {
+    std::string CSDL::tachChuoi(const std::string &dong) {
 
         std::string ketQua = "";
         for (int i = 0, len = dong.length(); i < len; ++i) 
@@ -18,14 +17,16 @@ namespace NguyenQuocHuy {
     }
 
 
-    bool 
-    CSDL::khongBiThieu(const std::string &dong) const {
+
+    bool CSDL::khongBiThieu(const std::string &dong) const {
+
         return int(tachChuoi(dong).length()) == this->soThuocTinh + 1;
+
     }
 
 
-    void 
-    CSDL::layMetaData(const char* tenFile) {
+
+    void CSDL::layMetaData(const char* tenFile) {
 
         std::ifstream docFile(tenFile);
         std::string dong;
@@ -39,19 +40,33 @@ namespace NguyenQuocHuy {
     }
 
 
-    char* 
-    CSDL::layDiaChiDongTrongDuLieu(int chiSoDong) const {
+
+    char* CSDL::layDiaChiDongTrongDuLieu(int chiSoDong) const {
+
         return this->duLieu + (chiSoDong * this->soThuocTinh);
+
     }
 
 
-    void 
-    CSDL::ganDuLieu(const std::string &duLieuDong, int chiSoDong) {
+
+    void CSDL::ganDuLieu(const std::string &duLieuDong, int chiSoDong) {
+
         char* dongHienTai = this->layDiaChiDongTrongDuLieu(chiSoDong);
         for (int i = 0, sz = duLieuDong.size(); i < sz; ++i)
             dongHienTai[i] = duLieuDong[i+1];
         this->lop[chiSoDong] = duLieuDong[0];
+
     }
+
+
+
+    char CSDL::layThuocTinhCuaDong(int chiSoDong, int chiSoThuocTinh) const {
+
+        char* dongHienTai = this->layDiaChiDongTrongDuLieu(chiSoDong);
+        return dongHienTai[chiSoThuocTinh];
+
+    }
+
 
 
     CSDL::CSDL(const char* tenFile) {
@@ -76,9 +91,21 @@ namespace NguyenQuocHuy {
 
     }
 
+
+
+    char CSDL::layLopCuaDong(int chiSoDong) const {
+
+        return this->lop[chiSoDong];
+
+    }
+
+
+
     CSDL::~CSDL() {
+
         delete[] this->duLieu;
         delete[] this->lop;
+
     }
 
 }

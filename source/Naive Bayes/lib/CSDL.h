@@ -24,20 +24,11 @@ namespace NguyenQuocHuy {
 
     class CSDL {
     private:
-        static std::string 
-        tachChuoi(const std::string &dong);
+        static std::string tachChuoi(const std::string &dong);
 
-        bool 
-        khongBiThieu(const std::string &dong) const;
-
-        void 
-        layMetaData(const char* tenFile);
-
-        char*
-        layDiaChiDongTrongDuLieu(int chiSoDong) const;
-
-        void 
-        ganDuLieu(const std::string &duLieuDong, int chiSoDong);
+        bool khongBiThieu(const std::string &dong) const;
+        void layMetaData(const char* tenFile);
+        void ganDuLieu(const std::string &duLieuDong, int chiSoDong);
     public:
         char* duLieu;
         char* lop;
@@ -45,6 +36,9 @@ namespace NguyenQuocHuy {
         int soDong;
 
         CSDL(const char* tenFile);
+        char* layDiaChiDongTrongDuLieu(int chiSoDong) const;
+        char layThuocTinhCuaDong(int chiSoDong, int chiSoThuocTinh) const;
+        char layLopCuaDong(int chiSoDong) const;
         ~CSDL();
     };
 

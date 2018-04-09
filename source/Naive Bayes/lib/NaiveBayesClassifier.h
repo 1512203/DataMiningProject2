@@ -9,8 +9,9 @@
 namespace NguyenQuocHuy {
     class NaiveBayesClassifier {
     private:
-        void
-        sapXepTheoLop();
+        void sapXepTheoLop();
+        char layThuocTinhCuaDongTheoViTri(int viTri, int chiSoThuocTinh) const;
+        char layLopCuaDongTheoViTri(int viTri) const;
 
         CSDL* csdl;
         int* viTriTheoLop;
