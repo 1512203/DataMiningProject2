@@ -1,5 +1,5 @@
-#include "../lib/CSDL.h"
-#include "../lib/NaiveBayesClassifier.h"
+#include "CSDL.h"
+#include "NaiveBayesClassifier.h"
 #include <cstdio>
 
 #define ARGUMENT_NOT_FOUND 1

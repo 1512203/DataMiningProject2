@@ -15,27 +15,39 @@
 ./
 |-- README.md
 |-- data/
+|   |-- test.csv
+|   |-- train.csv
+|-- README.md
 |-- source/
-|---|-- kNN/
-|---|-- Naive Bayes/
-|---|---|-- lib/
-|---|---|---|-- CSDL.cpp
-|---|---|---|-- CSDL.h
-|---|---|---|-- NaiveBayesClassifier.cpp
-|---|---|---|-- NaiveBayesClassifier.h
-|---|---|---|-- NaiveBayesClassifier.h
-|---|---|---|-- SortingSupport.cpp
-|---|---|---|-- SortingSupport.h
-|---|---|---|-- Makefile
-|---|---|-- src/
-|---|---|---|-- main.cpp
-|---|---|---|-- Makefile 
-|---|---|-- BuildAndRun.sh
-|---|---|-- Clean.sh
-|---|---|-- Makefile
+|   |-- dependency/
+|   |   |-- CSDL.cpp
+|   |   |-- CSDL.h
+|   |   |-- Makefile
+|   |   |-- SortingSupport.cpp
+|   |   |-- SortingSupport.h
+|   |-- kNN/
+|   |   |-- BuildAndRun.sh
+|   |   |-- Clean.sh
+|   |   |-- lib/
+|   |   |-- Makefile
+|   |   |-- src/
+|   |-- Naive Bayes/
+|   |   |-- BuildAndRun.sh
+|   |   |-- Clean.sh
+|   |   |-- lib/
+|   |   |   |-- Makefile
+|   |   |   |-- NaiveBayesClassifier.cpp
+|   |   |   |-- NaiveBayesClassifier.h
+|   |   |-- Makefile
+|   |   |-- Makefile.depend
+|   |   |-- src/
+|   |   |   |-- main.cpp
+|   |   |   |-- Makefile
 ```
 
 ## Huớng dẫn cách chạy:
+
+### Naive Bayes
 
 ## Bộ dữ liệu
 
