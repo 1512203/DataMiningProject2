@@ -29,8 +29,14 @@
 |   |   |-- BuildAndRun.sh
 |   |   |-- Clean.sh
 |   |   |-- lib/
+|   |   |   |-- Makefile
+|   |   |   |-- kNNClassifier.cpp
+|   |   |   |-- kNNClassifier.h
 |   |   |-- Makefile
+|   |   |-- Makefile.depend
 |   |   |-- src/
+|   |   |   |-- main.cpp
+|   |   |   |-- Makefile
 |   |-- Naive Bayes/
 |   |   |-- BuildAndRun.sh
 |   |   |-- Clean.sh
