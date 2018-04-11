@@ -1,6 +1,6 @@
-# Bài tập Lab #1 - Môn Data Mining
+# Bài tập Lab #2 - Môn Data Mining
 
-## Nguời cài đặt
+## Nguời cài đặt:
 * Họ và tên: Nguyễn Quốc Huy
 * Truờng Đại học Khoa học tự nhiên TP. Hồ Chí Minh
 * Lớp 15CNTN
@@ -53,9 +53,19 @@
 
 ## Huớng dẫn cách chạy:
 
-### Naive Bayes
+### Naive Bayes:
+* Trong terminal, change dir đến thư mục ```source/Naive Bayes/```
+* Gõ ```bash BuildAndRun.sh```
+* Kết quả phân lớp sẽ đuợc lưu trong tập tin ```result.txt``` (cũng trong thư mục ```source/Naive Bayes/```)
 
-## Bộ dữ liệu
+### kNN:
+* Trong terminal, change dir đến thư mục ```source/kNN/```
+* Gõ ```bash BuildAndRun.sh```
+* Kết quả phân lớp sẽ đuợc lưu trong tập tin ```result.txt``` (cũng trong thư mục ```source/kNN/```)
+
+
+## Bộ dữ liệu:
+Bộ dữ liệu sẽ đuợc đặt trong thư mục ```data```, cùng cấp với thư mục ```source```, gồm 2 file ```train.csv``` và ```data.csv```. Thư mục ```data``` này sẽ không đuợc đưa lên git.
 
 ## Note:
 Although README.md, names of classes and variables are in 
